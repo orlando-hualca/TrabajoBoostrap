@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    <title>Document</title>
+</head>
+
+<body>
+    <a href="#" class="text-end" data-bs-toggle="offcanvas" data-bs-target="#miOffcanvas">Mostrar Offcanvas</a>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="miOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Título del Offcanvas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- Acordeón -->
+            <div class="accordion" id="miAcordeon">
+                <!-- Primera sección del acordeón -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="seccion1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                            Título de la sección 1
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="seccion1"
+                        data-bs-parent="#miAcordeon">
+                        <div class="accordion-body">
+                            Contenido 1
+                        </div>
+                    </div>
+                    <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="seccion1"
+                        data-bs-parent="#miAcordeon">
+                        <div class="accordion-body">
+                            Contenido 2
+                        </div>
+                    </div>
+                </div>
+                <!-- Segunda sección del acordeón -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="seccion2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            Título de la sección 2
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="seccion2"
+                        data-bs-parent="#miAcordeon">
+                        <div class="accordion-body">
+                            Contenido de la sección 2
+                        </div>
+                    </div>
+                </div>
+                <!-- Tercera sección del acordeón -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="seccion3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            Título de la sección 3
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="seccion3"
+                        data-bs-parent="#miAcordeon">
+                        <div class="accordion-body">
+                            Contenido de la sección 3
+                        </div>
+                    </div>
+                </div>
+                <!-- Cuarta sección del acordeón -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="seccion3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            Título de la sección 3
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="seccion4"
+                        data-bs-parent="#miAcordeon">
+                        <div class="accordion-body">
+                            Contenido de la sección 3
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="nav nav-tabs" id="miTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="tab1" data-bs-toggle="tab" data-bs-target="#contenido1" type="button"
+                role="tab" aria-controls="contenido1" aria-selected="true">Tabla</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab2" data-bs-toggle="tab" data-bs-target="#contenido2" type="button"
+                role="tab" aria-controls="contenido2" aria-selected="false">Formulario</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab3" data-bs-toggle="tab" data-bs-target="#contenido3" type="button"
+                role="tab" aria-controls="contenido3" aria-selected="false">Cards</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab4" data-bs-toggle="tab" data-bs-target="#contenido4" type="button"
+                role="tab" aria-controls="contenido3" aria-selected="false">Imagen</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab5" data-bs-toggle="tab" data-bs-target="#contenido5" type="button"
+                role="tab" aria-controls="contenido3" aria-selected="false">Boton</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="miTabContenido">
+        <div class="tab-pane fade show active" id="contenido1" role="tabpanel" aria-labelledby="tab1">
+            <div class="d-flex justify-content-center m-5">
+                <div class="container mx-auto">
+                    <table class="table table-bordered border-primary">
+                        <thead>
+                            <tr>
+                                <th scope="col">Encabezado 1</th>
+                                <th scope="col">Encabezado 2</th>
+                                <th scope="col">Encabezado 3</th>
+                                <th scope="col">Encabezado 4</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="contenido2" role="tabpanel" aria-labelledby="tab2">
+            <div class="d-flex justify-content-center mt-5">
+                <form class="border border-primary rounded p-4" style="max-width: 15000px;">
+                    <h1>Registro</h1>
+                    <div class="form-group mb-5">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control mr-2" id="nombre" placeholder="Introduce tu nombre">
+                        <label for="contraseña">Contraseña:</label>
+                        <input type="password" class="form-control mr-2" id="contraseña"
+                            placeholder="Introduce tu contraseña">
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" class="form-control mr-2" id="correo"
+                            placeholder="Introduce tu correo electrónico">
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="contenido3" role="tabpanel" aria-labelledby="tab3">
+            <!--cards-->
+            <div class="container justify-contend-center">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card border-primary">
+                            <img src="Recursos/image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                                    minus
+                                    pariatur provident sit! Dolorum natus ipsum doloremque, quas iusto dicta amet nulla
+                                    eum
+                                    quasi sapiente harum aliquid quaerat, optio dolor?</p>
+                                <a href="#" class="btn btn-primary">Botón de acción</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-primary">
+                            <img src="Recursos/image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card 2</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+                                    minima
+                                    voluptas et deleniti sint ipsum libero mollitia a iure, nesciunt, sequi quis
+                                    officia? Eius
+                                    beatae itaque aspernatur ad provident blanditiis?</p>
+                                <a href="#" class="btn btn-primary">Botón de acción</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-primary">
+                            <img src="Recursos/image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card 3</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nulla
+                                    aliquam
+                                    quod dolores iste iure tempora odit ratione, similique voluptatem velit voluptate
+                                    tempore?
+                                    Commodi, pariatur atque? Labore nihil ea praesentium!</p>
+                                <a href="#" class="btn btn-primary">Botón de acción</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-primary">
+                            <img src="Recursos/image.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card 4</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                                    aliquid
+                                    saepe dicta soluta, dolorem quasi nesciunt voluptatum, fugiat similique excepturi
+                                    ipsam
+                                    ratione rem optio natus! Quam neque eveniet impedit temporibus.</p>
+                                <a href="#" class="btn btn-primary">Botón de acción</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="contenido4" role="tabpanel" aria-labelledby="tab4">
+            <div class="container mt-5">
+                <div class="row ">
+                    <div class="col-md-4 ">
+                        <img src="Recursos/image.jpg" height="200px" alt="Imagen">
+                    </div>
+                    <div class="col-md-8  border-primary">
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget aliquam
+                            sapien. Maecenas vel mi sed arcu pellentesque consectetur. Nulla facilisi. Aenean placerat
+                            sapien ut ex lobortis efficitur. Nullam consequat magna eget turpis tristique suscipit. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget aliquam sapien. Maecenas
+                            vel mi sed arcu pellentesque consectetur. Nulla facilisi. Aenean placerat sapien ut ex
+                            lobortis efficitur. Nullam consequat magna eget turpis tristique suscipit.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="contenido5" role="tabpanel" aria-labelledby="tab5">
+            <!-- Botón para abrir el modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Autor
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Autor de la página web</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Orlando Hualca Yavi
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script></body>
+
+</html>
